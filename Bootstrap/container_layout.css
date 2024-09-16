@@ -1,0 +1,11 @@
+.container{
+    background-color: yellow;
+
+
+}
+.container-fluid{
+    background-color: pink;
+    position: absolute;
+    top: 250px;
+    /* this will always us e100% width as it is fluid */
+}

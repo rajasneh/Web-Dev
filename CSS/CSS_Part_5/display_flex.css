@@ -1,0 +1,36 @@
+#container{
+    height: 300px;
+    width: 80%;
+    border: 2px solid black;
+    margin: 2px auto;
+    display: flex;
+    flex-direction:row;
+}
+h1{
+    text-align: center;
+}
+#container div{
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+#container2{
+    height: 300px;
+    width: 80%;
+    border: 2px solid black;
+    margin: 2px auto;
+    display: flex;
+    flex-direction:row-reverse;
+}
+#container2 div{
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

@@ -1,0 +1,46 @@
+h1{
+    color: #b92b27;
+}
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b37;
+    color: white;
+}
+.upvote{
+    background-color:green;
+    color: white;
+}
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+nav ul li a{
+    color: hotpink;
+}
+p+h3{
+    text-decoration: underline;
+}
+.upvote+button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+h1::first-letter{
+    color: black;
+}
+p::first-letter{
+    color: rgb(196, 14, 14);
+    font-weight: bold;
+}
+p::selection{
+    background-color: rgb(190, 157, 106);
+}
