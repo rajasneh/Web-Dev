@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1><b>Registration Form</b></h1>
+    <form action="/action">
+        <input type="textarea" name="first" id="first" placeholder="First Name">
+        <input type="textarea" name="last" id="last" placeholder="Last Name">
+        <div>
+            <label for="gender">Choose your gender</label>
+            <select name="gender" id="gender">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Others</option>
+            </select>
+        </div>
+        <div>
+            Do you agree to all terms of services?
+            <input type="checkbox" name="agree"  id="agree">
+            <label for="agree">Yes,I agree</label>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

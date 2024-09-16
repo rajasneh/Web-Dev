@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+</head>
+<body>
+    <form action="/action"><!--where to send the submitted data or what action to perform on data-->
+        <label><!--this is a connection when we click on username the cursor will automatically move to input box-->
+            Password
+            <input type="password" placeholder="Enter Your password">
+        </label>
+
+        <br>
+
+        <label>
+            Username
+            <input type="text" placeholder="Enter Your Username">
+        </label>
+       
+        <!--Classical or Standard way-->
+        <div><!--instead of using br we used div-->
+            <label for="color">color:</label>
+            <input type="color" placeholder="enter your color" id="color">
+        </div>
+    </form>
+</body>
+</html>
