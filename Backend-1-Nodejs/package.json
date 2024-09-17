@@ -1,0 +1,13 @@
+{
+  "name": "backend-1-nodejs",
+  "version": "1.0.0",
+  "main": "Export_in_Files01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asneh Raj",
+  "license": "ISC",
+  "description": "",
+  "type":"module"
+
+}
