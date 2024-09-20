@@ -6,6 +6,10 @@ let path=require("path");
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"/views"));
 
+
+//serving static files
+app.use(express.static(path.join(__dirname,"public/css")));
+app.use(express.static(path.join(__dirname,"public/js")));
 app.listen(port,()=>{
     console.log(`Listening on port ${port}`);
 });
