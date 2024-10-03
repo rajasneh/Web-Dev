@@ -5,12 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Asneh Raj",
+  "author": "Asneh",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@faker-js/faker": "^9.0.3",
-    "mysql": "^2.18.1",
     "mysql2": "^3.11.3"
   }
 }
