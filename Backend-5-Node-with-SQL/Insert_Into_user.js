@@ -4,7 +4,7 @@ const connection=mysql.createConnection({
     host:'localhost',
     user:'root',
     database:"delta_app",
-    password:"Asneh@Raj281104"
+    password:""//enter your password
 });
 
 let q="INSERT INTO user (id,username,email,password) VALUES ?";
