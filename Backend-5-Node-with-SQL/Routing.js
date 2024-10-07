@@ -39,6 +39,23 @@ app.get("/",(req,res)=>{
     }
 });
 
+
+//show route
+app.get("/user",(req,res)=>{
+    let q=`SELECT * FROM user`;
+    try{
+        connection.query(q,(err,users)=>{
+            if(err) throw err;
+           // console.log(result);
+            res.render("showusers.ejs",{users});
+        });
+        } catch(err){
+        console.log(err);
+        res.send("Some error in Database");
+        }
+});
+
+
 app.listen("8080",()=>{
     console.log("Server is listening on 8080");
 });
