@@ -24,11 +24,7 @@ let getRandomUser= ()=> {
   };
 
 
-
-
-
-
-
+//home route
 app.get("/",(req,res)=>{
     let q=`SELECT COUNT(*) FROM user`;
     try{
