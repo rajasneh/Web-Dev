@@ -48,3 +48,14 @@ User.find({age:{$gt:47}})
     .catch((err)=>{
         console.log(err);
     });
+
+
+
+    //update in mongoose
+    User.updateOne({name:"Adam"},{age:32})
+    .then((res)=>{
+      console.log(res);
+    })
+    .catch((err)=>{
+      console.log(err);
+    });
