@@ -59,3 +59,20 @@ User.find({age:{$gt:47}})
     .catch((err)=>{
       console.log(err);
     });
+
+console.log("---------------------------------------");
+    //Find And Update :-
+
+    User.findOneAndUpdate({name:"Adam"},{email:"adam13@yahoo.in"},{new:true})//setting this new to true helps us gettuing the updated data
+      .then((res)=>{
+        console.log(res);
+      })
+      .catch((err)=>{
+        console.log(err);
+      });
+
+//Delete method 
+console.log("---------------------------------------");
+User.deleteOne({name:"Adam"}).then((res)=>{
+  console.log(res);
+});
