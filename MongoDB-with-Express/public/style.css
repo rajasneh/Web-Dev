@@ -1,0 +1,16 @@
+body{
+    margin-left: 20px;
+}
+.chat{
+    margin-left: 10px;
+    padding: 20px;    
+    border-radius: 16px;
+    display: inline-block;
+    background-color: aliceblue;
+}
+.msg{
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px 15px; 
+    border-radius: 16px;
+}
