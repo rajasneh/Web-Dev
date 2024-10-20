@@ -72,7 +72,7 @@ app.post("/chats",async (req,res,next)=>{
     }
 });
 
-function asyncWrap(fn){
+function asyncWrap(fn){//------>wrapAsync
     return function(req,res,next){
         fn(req,res,next).catch((err)=>next(err));
     }
