@@ -3,17 +3,21 @@ const mongoose = require('mongoose');
 
 const chatSchema=mongoose.Schema({
     from:{
-        type:String
+        type:String,
+        required:true
     },
     to:{
-        type:String
+        type:String,
+        required:true
     },
     msg:{
         type:String,
-        maxLength:50
+        maxLength:50,
+        required:true
     },
     created_at:{
-        type:Date
+        type:Date,
+        required:true
     }
 });
 
