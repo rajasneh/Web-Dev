@@ -1,8 +1,16 @@
-
 import './App.css'
+import Title from "./Title.jsx";
+
+
 
 function App() {
-  return <h1>Hello world</h1>
+  return (
+    <div>
+    <Title/>
+    <Title/>
+    </div>
+  );
+
 }
 
 export default App
