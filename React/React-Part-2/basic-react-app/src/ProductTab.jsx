@@ -6,6 +6,7 @@ function ProductTab() {
         <>
             <Product title="phone" price="30000" options={features}/>
             <Product title="laptop" price={40000} options={features} />
+            <Product title="Pen" price={10} />
         </>
     );
 }
