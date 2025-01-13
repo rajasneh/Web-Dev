@@ -1,0 +1,107 @@
+/* Dark theme */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Todo List Container */
+div {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+}
+
+/* Input and button styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Task List Styling */
+h4 {
+  margin-top: 20px;
+  color: #bb86fc;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto; /* Makes the task list scrollable */
+}
+
+li {
+  background-color: #2c2c2c;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  color: #e0e0e0;
+}
+
+button {
+  background-color: #d32f2f;
+}
+
+button:hover {
+  background-color: #9a0007;
+}
+
+/* Fix input and button at the top */
+input,
+button {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #121212;
+}
+
+/* Adding responsiveness for small screens */
+@media screen and (max-width: 480px) {
+  div {
+    padding: 10px;
+  }
+
+  input,
+  button {
+    padding: 8px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+}
