@@ -83,6 +83,7 @@ button {
   top: 0;
   z-index: 1;
   background-color: #121212;
+  margin-left: 1rem;
 }
 
 /* Adding responsiveness for small screens */
