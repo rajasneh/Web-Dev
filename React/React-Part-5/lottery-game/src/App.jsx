@@ -1,12 +1,10 @@
 import './App.css'
-import Lottery from './Lottery'
-import Ticket from './Ticket.jsx'
+import Lottery from "./Lottery"
+
 function App() {
   return (
     <>
-     <Ticket ticket={[0,1,2]}/>
-     <Ticket ticket={[0,1,2]}/>
-     <Ticket ticket={[0,1,2]}/>
+     <Lottery n={3} winningSum={15}/>
     </>
   )
 }
