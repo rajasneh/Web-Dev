@@ -1,56 +1,56 @@
-import { set } from "mongoose";
 import { useState } from "react";
 
-export default function CommentForm() {
-  let [formData, setFormData] = useState({
+export default function CommentForm({ addNewComment }) {
+  const [formData, setFormData] = useState({
     username: "",
     remarks: "",
     rating: 5,
   });
 
-  let handleInputChange = (event) => {
-    setFormData((currData) => {
-      return { ...currData, [event.target.name]: event.target.value };
-    });
+  const handleInputChange = (event) => {
+    setFormData((currData) => ({
+      ...currData,
+      [event.target.name]: event.target.value,
+    }));
   };
 
-  let handleSubmit = (event) => {
-    console.log(formData);
-    event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent page reload
+    addNewComment(formData); // Pass data to parent
     setFormData({
       username: "",
       remarks: "",
       rating: 5,
     });
   };
+
   return (
     <div>
       <h4>Give a comment</h4>
-      <form onChange={handleInputChange}>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>
         <input
-          onChange={handleInputChange}
           placeholder="username"
           type="text"
           value={formData.username}
           id="username"
           name="username"
+          onChange={handleInputChange}
         />
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         <label htmlFor="remarks">Remarks</label>
         <textarea
-          onChange={handleInputChange}
           value={formData.remarks}
-          placeholder="Add few remarks"
+          placeholder="Add a few remarks"
           id="remarks"
           name="remarks"
+          onChange={handleInputChange}
         ></textarea>
-        <br></br>
-        <br></br>
+        <br />
+        <br />
         <label htmlFor="rating">Rating</label>
         <input
-          onChange={handleInputChange}
           placeholder="rating"
           type="number"
           min={1}
@@ -58,10 +58,11 @@ export default function CommentForm() {
           id="rating"
           name="rating"
           value={formData.rating}
+          onChange={handleInputChange}
         />
-        <br></br>
-        <br></br>
-        <button onClick={handleSubmit}>Add comment</button>
+        <br />
+        <br />
+        <button type="submit">Add comment</button>
       </form>
     </div>
   );
